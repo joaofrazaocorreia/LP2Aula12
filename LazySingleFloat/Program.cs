@@ -21,12 +21,12 @@ namespace LazySingleFloat
 
         private static void SetValue(float value)
         {
-            Singleton.Value = value;
+            Singleton.Instance.MyValue = value;
         }
 
         private static void PrintValue()
         {
-            Console.WriteLine(Singleton.Value);
+            Console.WriteLine(Singleton.Instance.MyValue);
         }
     }
 }
